@@ -1,19 +1,31 @@
 <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+    <div class="header-wrapper">
+      <a class="header-logo-link" href="">
+        <svg class="header-logo-icon" width="100" height="16">
+          <use href="img/sprite.svg#logo"></use>
         </svg>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a href="#about">About us</a></li>
+          <li class="header-item"><a href="#products">Our products</a></li>
+          <li class="header-item"><a href="#price">Prices</a></li>
+          <li class="header-item"><a href="#bestsellers">Bestsellers</a></li>
+          <li class="header-item"><a href="#reviews">Reviews</a></li>
+          <li class="header-item"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <a class="header-open-menu-link" href="">
+        <svg class="header-open-menu-icon" width="32" height="32">
+          <use href="img/sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <a class="header-close-menu-link" href="">
+        <svg class="header-close-menu-icon" width="32" height="32">
+          <use href="img/sprite.svg#close"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </header>

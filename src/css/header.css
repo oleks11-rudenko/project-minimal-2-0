@@ -1,44 +1,96 @@
 .header {
-  padding: 20px 0;
+  background-color: #f7faff;
 }
-.nav {
+
+.header-wrapper {
   display: flex;
   justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  margin: 0 auto;
 }
-.nav-list {
+
+.header-logo-link {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
-.nav-link {
-  position: relative;
+
+.header-logo-icon {
+  stroke: #0a224a;
+  fill: #0a224a;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-item {
+  font-size: 18px;
+}
+
+.header-open-menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-open-menu-icon {
+  stroke: #0a224a;
+  fill: #0a224a;
+}
+
+.header-close-menu-link {
+  display: none;
+}
+
+.header-close-menu-icon {
+  stroke: #0a224a;
+  fill: #0a224a;
+}
+
+.is-active {
   display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+@media only screen and (min-width: 768px) {
+  .header-logo-link {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .header-logo-icon {
+    width: 127px;
+  }
+
+  .header-open-menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-close-menu-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
-}
-.nav-link.active::after {
-  background: #747bff;
+
+@media only screen and (min-width: 1440px) {
+  .header-nav {
+    display: block;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 30px;
+    padding: 8px;
+  }
+
+  .header-open-menu-link {
+    display: none;
+  }
+
+  .header-close-menu-link {
+    display: none;
+  }
 }
