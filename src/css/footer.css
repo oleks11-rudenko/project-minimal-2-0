@@ -1,29 +1,43 @@
 .footer {
+  background-color: #0a224a;
+  color: #ffffff;
 }
-
 .footer-logo-link {
 }
-
-.footer-nav {
+.footet-logo-icon {
+  margin-top: 42px;
+  margin-bottom: 42px;
+  fill: #ffffff;
 }
-
 .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 36px;
 }
-
 .footer-item {
 }
-
+.footer-address {
+}
+.footer-map-position {
+}
+.footer-schedule {
+}
+.footer-contact-list {
+}
+.footer-contact-item {
+}
+.footer-contact-link {
+}
+.footer-icon-list {
+}
 .footer-icon-item {
 }
-
 .footer-icon-link {
 }
-
-.footer-icon-image {
+.footer-icon {
 }
-
 .footer-privacy {
 }
-
 .footer-privacy-accent {
 }
