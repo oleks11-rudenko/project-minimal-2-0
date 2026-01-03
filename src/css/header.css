@@ -1,5 +1,7 @@
 .header {
+  width: 100%;
   background-color: #f7faff;
+  z-index: 1000;
 }
 
 .header-wrapper {
@@ -42,22 +44,9 @@
   align-items: center;
 }
 
-.header-open-menu-icon {
+.header-menu-button {
   stroke: #0a224a;
   fill: #0a224a;
-}
-
-.header-close-menu-link {
-  display: none;
-}
-
-.header-close-menu-icon {
-  stroke: #0a224a;
-  fill: #0a224a;
-}
-
-.is-active {
-  display: block;
 }
 
 @media only screen and (min-width: 768px) {
@@ -70,12 +59,7 @@
     width: 127px;
   }
 
-  .header-open-menu-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-close-menu-icon {
+  .header-menu-button {
     width: 40px;
     height: 40px;
   }
@@ -92,11 +76,7 @@
     padding: 8px;
   }
 
-  .header-open-menu-link {
-    display: none;
-  }
-
-  .header-close-menu-link {
+  .header-menu-button {
     display: none;
   }
 }

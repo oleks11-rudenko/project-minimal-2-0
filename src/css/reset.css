@@ -37,6 +37,8 @@ button {
   font-family: inherit;
   color: currentColor;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 input {

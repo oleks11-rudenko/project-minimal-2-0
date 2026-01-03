@@ -1,0 +1,42 @@
+.legal-header {
+  background-color: #f7faff;
+}
+
+.legal-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.legal-page {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.legal-title {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.legal-date {
+  margin-bottom: 8px;
+}
+
+.legal-section {
+  padding-bottom: 32px;
+}
+
+.section-title {
+  text-align: start;
+  margin-bottom: 8px;
+}
+
+.highlight {
+  font-weight: 900;
+}
+
+.legal-link {
+  text-decoration: underline;
+}
