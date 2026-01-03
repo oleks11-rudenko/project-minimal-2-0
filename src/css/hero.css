@@ -36,6 +36,12 @@
   padding: 12px 65px;
   color: #ffffff;
   background-color: #0a224a;
+  transition: background-color 300ms ease;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  background-color: #061835;
 }
 
 .picture-wrapper {

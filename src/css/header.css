@@ -28,6 +28,12 @@
 
 .header-item {
   font-size: 18px;
+  transition: transform 300ms ease;
+}
+
+.header-item:hover,
+.header-item:focus {
+  transform: scale(1.05);
 }
 
 .header-open-menu-link {

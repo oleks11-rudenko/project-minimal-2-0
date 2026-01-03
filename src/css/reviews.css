@@ -15,8 +15,12 @@
   padding: 24px;
   border-radius: 8px;
   background-color: #ffffff;
+  transition: transform 300ms ease;
 }
 
+.reviews-item:hover {
+  transform: scale(1.04);
+}
 .reviews-wrapper {
   display: flex;
   gap: 14px;
