@@ -1,43 +1,134 @@
 .footer {
   background-color: #0a224a;
   color: #ffffff;
+  padding-top: 42px;
+  padding-bottom: 16px;
 }
-.footer-logo-link {
+
+.footer-wrapper {
+  position: relative;
 }
-.footet-logo-icon {
-  margin-top: 42px;
+
+.footer-logo-icon {
   margin-bottom: 42px;
   fill: #ffffff;
 }
+
 .footer-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 36px;
 }
+
 .footer-item {
+  font-style: normal;
 }
-.footer-address {
+
+.contact-list {
+  margin-bottom: 64px;
 }
-.footer-map-position {
+
+.contact-item:last-child {
+  display: none;
 }
-.footer-schedule {
-}
-.footer-contact-list {
-}
-.footer-contact-item {
-}
-.footer-contact-link {
-}
+
 .footer-icon-list {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  display: flex;
+  gap: 16px;
+  fill: #ffffff;
 }
-.footer-icon-item {
-}
-.footer-icon-link {
-}
-.footer-icon {
-}
+
 .footer-privacy {
+  opacity: 0.6;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 1.188px;
 }
 .footer-privacy-accent {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+
+  .footer-logo-icon {
+    margin-bottom: 32px;
+    width: 127px;
+    height: auto;
+  }
+
+  .footer-list {
+    font-size: 19px;
+    margin-bottom: 64px;
+  }
+
+  .category-list {
+    position: absolute;
+    top: -8px;
+    left: 376px;
+    padding: 8px;
+    font-size: 18px;
+    gap: 16px;
+  }
+
+  .contact-item:last-child {
+    display: initial;
+  }
+
+  .footer-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-privacy {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-logo-ico {
+    margin-bottom: 39px;
+  }
+
+  .footer-list {
+    gap: 24px;
+    margin-bottom: 35px;
+  }
+
+  .category-list {
+    flex-direction: row;
+    left: 326px;
+    gap: 30px;
+  }
+
+  .address-and-contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 87px;
+  }
+
+  .contact-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .contact-item:last-child {
+    position: absolute;
+    left: 224px;
+  }
+
+  .footer-icon-list {
+    gap: 30px;
+  }
 }
