@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-minimal-2-0/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-minimal-2-0/assets/index-BGnKK1ET.css">
+    <link rel="stylesheet" crossorigin href="/project-minimal-2-0/assets/styles-EdTB8ONl.css">
   </head>
   <body>
     <header class="header">
@@ -40,31 +40,33 @@
           <li class="header-item"><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
-      <a class="header-open-menu-link" href="">
+      <button type="button" class="js-open-menu header-menu-button">
         <svg class="header-open-menu-icon" width="32" height="32">
           <use href="/project-minimal-2-0/assets/sprite-BD8aijY0.svg#menu"></use>
         </svg>
-      </a>
-      <a class="header-close-menu-link" href="">
+      </button>
+      <button type="button" class="js-close-menu header-menu-button hide">
         <svg class="header-close-menu-icon" width="32" height="32">
           <use href="/project-minimal-2-0/assets/sprite-BD8aijY0.svg#close"></use>
         </svg>
-      </a>
+      </button>
     </div>
   </div>
 </header>
 
-    <div class="mobile-menu hide">
-  <nav class="modal-nav">
-    <ul class="modal-list">
-      <li class="modal-item">About us</li>
-      <li class="modal-item">Our products</li>
-      <li class="modal-item">Prices</li>
-      <li class="modal-item">Bestsellers</li>
-      <li class="modal-item">Reviews</li>
-      <li class="modal-item">Contacts</li>
-    </ul>
-  </nav>
+    <div class="mobile-menu-backdrop js-modal">
+  <div class="mobile-menu">
+    <nav class="modal-nav">
+      <ul class="modal-list">
+        <li class="modal-item"><a class="modal-link" href="#about">About us</a></li>
+        <li class="modal-item"><a class="modal-link" href="#products">Our products</a></li>
+        <li class="modal-item"><a class="modal-link" href="#price">Prices</a></li>
+        <li class="modal-item"><a class="modal-link" href="#bestsellers">Bestsellers</a></li>
+        <li class="modal-item"><a class="modal-link" href="#reviews">Reviews</a></li>
+        <li class="modal-item"><a class="modal-link" href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
     <main>
@@ -673,21 +675,39 @@
 
       <ul class="footer-icon-list">
         <li class="footer-icon-item">
-          <a class="footer-icon-link" href="https://www.facebook.com/" aria-label="Facebook">
+          <a
+            class="footer-icon-link"
+            href="https://www.facebook.com/"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg class="footer-icon" width="28" height="28">
               <use href="/project-minimal-2-0/assets/sprite-BD8aijY0.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer-icon-item">
-          <a class="footer-icon-link" href="https://www.instagram.com/" aria-label="Instagram">
+          <a
+            class="footer-icon-link"
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg class="footer-icon" width="28" height="28">
               <use href="/project-minimal-2-0/assets/sprite-BD8aijY0.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer-icon-item">
-          <a class="footer-icon-link" href="https://www.youtube.com/" aria-label="YouTube">
+          <a
+            class="footer-icon-link"
+            href="https://www.youtube.com/"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg class="footer-icon" width="28" height="28">
               <use href="/project-minimal-2-0/assets/sprite-BD8aijY0.svg#youtube"></use>
             </svg>
@@ -697,8 +717,9 @@
 
       <p class="footer-privacy">
         By using this website, you agree to the
-        <span class="footer-privacy-accent">Terms of Service</span> and
-        <span class="footer-privacy-accent">Privacy Policy</span>
+        <a class="footer-privacy-link" href="/terms.html">Terms of Service</a>
+        and
+        <a class="footer-privacy-link" href="/privacy.html">Privacy Policy</a>
       </p>
     </div>
   </div>
